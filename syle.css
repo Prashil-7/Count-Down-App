@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: #333;
+    color: aliceblue;
+}
+
+.container{
+    width:80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(117, 117, 125);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.countdown{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: rgb(43, 116, 226);
+    padding: 40px;
+    width:450px;
+    border:1px solid black;
+    border-radius: 5px;
+    margin:auto;
+}
+
+
+.countdown div{
+    padding: 20px;
+    width:70px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(105, 51, 177);
+}
+.countdown div span{
+    font-size: 2rem;
+    color: white;
+    cursor:pointer;
+    padding: 5px;
+}
+
+.progress{
+    height:10px;
+    width:450px;
+    background-color: honeydew;
+    border: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    overflow: hidden;
+}
+#progress-bar{
+    width:0%;
+    height:100%;
+    background-color: rgb(228, 191, 91);
+    transition: width 1s ease-in;
+    border-radius: 1rem;
+ 
+
+}
